@@ -15,6 +15,10 @@ public class Breakfast {
                 Icecream.consume();
                 sum++;
             }
+            else if (part[0].equals("Cheese")){
+                Cheese cheese = new Cheese();
+                cheese.consume();
+                sum++;}
             i++;
         }
         for(Food item: breakfast)

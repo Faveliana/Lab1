@@ -11,7 +11,8 @@ public abstract class Food implements Consumable
     {
         if(!(arg0 instanceof Food))return false;
         if(name==null || ((Food)arg0).name==null) return false;
-        return name.equals(((Food)arg0).name);
+        if(name.equals(((Food) arg0).name)) return true;
+        else return false;
     }
     public String getName() {
         return name;
