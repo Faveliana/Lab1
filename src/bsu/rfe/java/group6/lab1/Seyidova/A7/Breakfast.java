@@ -2,7 +2,7 @@ package bsu.rfe.java.group6.lab1.Seyidova.A7;
 
 public class Breakfast {
     public static void main(String[] args) {
-        Food[] breakfast = new Food[10];
+        Food[] breakfast = new Food[20];
         int sum = 0;
         int i = 0;
         System.out.println("Посчитаем количество продуктов");
@@ -19,6 +19,11 @@ public class Breakfast {
                 Cheese cheese = new Cheese();
                 cheese.consume();
                 sum++;}
+            else if (part[0]. equals("Apple")) {
+                Apple Apple = new Apple (part[1]);
+                Apple.consume();
+                sum++;
+            }
             i++;
         }
         for(Food item: breakfast)
