@@ -29,9 +29,29 @@ public class Breakfast {
         for(Food item: breakfast)
         {
             if(item != null)
-                item.consume();
+                Consumable.consume();
             else break;
         }
         System.out.println("Количество съеденных продуктов: " +sum);
     }
 }
+
+      /////*  byte a=0,c=0,m=0;
+      //  for (Food item:breakfast){
+            //if (item != null){
+              //  if(item.getName().equals("Apple")){///
+                //    a++;}///
+                //if(item.getName().equals("Cheese")){
+                  //  c++;
+                //}
+                //if(item.getName().equals("Icecream")){
+                  //  m++;
+                //}
+            //}
+            //else
+              //  break;
+        //}
+
+    //}
+
+//}

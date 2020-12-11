@@ -1,18 +1,28 @@
 package bsu.rfe.java.group6.lab1.Seyidova.A7;
 
-public class Icecream extends Food{
-    private String sirup;
-        public Icecream(String sirup)
-        {
-            super("Icecream");
-            this.sirup = sirup;
-        }
-        public void consume() {
-            System.out.println(name + " с сиропом '" + sirup.toUpperCase() + "' съедено!");
+public class Icecream extends Food {
+
+    private String syrup;
+
+    public String getSyrup() {
+        return syrup;
     }
-public String getSirup(){return sirup;}
-public void setSirup(String sirup){this.sirup=sirup;}
+
+    public void setSyrup() {
+        this.syrup = syrup;
+    }
+
+    public Icecream(String syrup) {
+        super("Icecream");
+        this.syrup = syrup;
+    }
+
+    public void consume() {
+        System.out.println(this + "съеден");
+    }
+
     public String toString() {
-        return super.toString() + " с сиропом '" + sirup.toUpperCase() + "'";
+        return super.toString() + " with '" + syrup.toUpperCase() + "'";
+
     }
 }
